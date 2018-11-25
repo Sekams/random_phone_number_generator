@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from '../images/logo.svg';
 import PropTypes from 'prop-types'
 
+const DEFAULT_STAT = 'Calculating...';
+
 class NavBar extends Component {
   render() {
     const { total, maximum, minimum } = this.props;
@@ -43,9 +45,9 @@ class NavBar extends Component {
 }
 
 NavBar.defaultProps = {
-  total: '10000',
-  maximum: '0999999999',
-  minimum: '0000000000',
+  total: DEFAULT_STAT,
+  maximum: DEFAULT_STAT,
+  minimum: DEFAULT_STAT,
   generateNumbers: () => { },
   setOrder: () => { },
 };
