@@ -4,6 +4,6 @@ env:
 language: node_js
 node_js:
   - "iojs"
-  - "7"
+  - "8.0.0"
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
