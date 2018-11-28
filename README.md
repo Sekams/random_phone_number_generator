@@ -1,44 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random Phone Number Generator
 
-## Available Scripts
+[![Build Status](https://travis-ci.org/Sekams/random_phone_number_generator.svg?branch=master)](https://travis-ci.org/Sekams/random_phone_number_generator)
+[![Coverage Status](https://coveralls.io/repos/github/Sekams/random_phone_number_generator/badge.svg?branch=master)](https://coveralls.io/github/Sekams/random_phone_number_generator?branch=master)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4185f3d81a24cde019c8/test_coverage)](https://codeclimate.com/github/Sekams/random_phone_number_generator/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4185f3d81a24cde019c8/maintainability)](https://codeclimate.com/github/Sekams/random_phone_number_generator/maintainability)
 
-In the project directory, you can run:
+**Random Phone Number Generator** is a ReactJS application that generates random phone numbers.
 
-### `npm start`
+## Getting Started
+To be able to use the application locally, one should follow the guidelines highlighted below.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone/download the application Github repository by running the command below in a git shell
+```
+git clone https://github.com/Sekams/random_phone_number_generator.git
+```
+2. Install the `yarn` package manager [Guide](https://yarnpkg.com/lang/en/docs/install/)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+3. Install the application requirements by running the code below at the root of the project directory:
+```
+yarn install
+```
 
-### `npm test`
+4. After all the requirements are installed on the local machine, run the application by running the following command:
+```
+yarn start
+```
+5. After successfully running the application, one can explore the features of the Random Phone Number Generator in any web browser of choice through the address provided in the terminal
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1440" alt="screen shot 2018-11-28 at 6 25 41 am" src="https://user-images.githubusercontent.com/22541550/49127011-d711ef00-f2d6-11e8-9bba-c28f003d21ab.png">
+<img width="1440" alt="screen shot 2018-11-28 at 6 26 37 am" src="https://user-images.githubusercontent.com/22541550/49127014-d8dbb280-f2d6-11e8-905c-6a67d4660349.png">
+<img width="1440" alt="screen shot 2018-11-28 at 6 26 59 am" src="https://user-images.githubusercontent.com/22541550/49127016-daa57600-f2d6-11e8-9c32-c739d98507cb.png">
+<img width="453" alt="screen shot 2018-11-28 at 6 27 44 am" src="https://user-images.githubusercontent.com/22541550/49127018-dbd6a300-f2d6-11e8-92f1-1e8ff1cd52c7.png">
 
-### `npm run build`
+## Features
+* Random Generation of upto 10000 Phone Numbers
+* Sorting (Ascending and Descending orders)
+* Always accurate minimum and miximum numbers
+* Saving of the generated numbers in text file
+* Optimized for performance
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testing
+To test the application, run the following command:
+```
+yarn test
+```
