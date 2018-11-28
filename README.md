@@ -25,7 +25,7 @@ yarn install
 ```
 yarn start
 ```
-5. After successfully running the application, one can explore the features of the Random Phone Number Generator in any web browser of choice
+5. After successfully running the application, one can explore the features of the Random Phone Number Generator in any web browser of choice through the address provided in the terminal
 
 <img width="1440" alt="screen shot 2018-11-28 at 6 25 41 am" src="https://user-images.githubusercontent.com/22541550/49127011-d711ef00-f2d6-11e8-9bba-c28f003d21ab.png">
 <img width="1440" alt="screen shot 2018-11-28 at 6 26 37 am" src="https://user-images.githubusercontent.com/22541550/49127014-d8dbb280-f2d6-11e8-905c-6a67d4660349.png">
