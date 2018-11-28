@@ -3,7 +3,6 @@ env:
     - CC_TEST_REPORTER_ID=976918e83f79c2e10bef375880490bb63937b94c7d8582c5368d415c9101d598
 language: node_js
 node_js:
-  - "iojs"
   - "11.2.0"
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
