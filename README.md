@@ -33,7 +33,7 @@ yarn start
 <img width="453" alt="screen shot 2018-11-28 at 6 27 44 am" src="https://user-images.githubusercontent.com/22541550/49127018-dbd6a300-f2d6-11e8-92f1-1e8ff1cd52c7.png">
 
 ## Features
-* Random Phone Number Generation
+* Random Generation of upto 10000 Phone Numbers
 * Sorting (Ascending and Descending orders)
 * Always accurate minimum and miximum numbers
 * Saving of the generated numbers in text file
