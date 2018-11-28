@@ -10,6 +10,37 @@ import { prepend0s } from '../utils/Helpers'
 const renderOrderOptions = () =>
   ORDERS.map(order => <option key={order} value={order}>{order}</option>);
 
+const renderStatistic = (label, value) => (
+  <li className="right">
+    <label>{label}</label>
+    <label>{prepend0s(value)}</label>
+  </li>
+);
+
+const renderTotal = (total, setTotal, generateNumbers) => (
+  <li className="right">
+    <label>Total:</label>
+    <input
+      value={total}
+      onChange={setTotal()}
+      type="number"
+      onBlur={generateNumbers()}
+    />
+  </li>
+);
+
+const renderOrder = (order, setOrder) => (
+  <li className="right">
+    <label>Order</label>
+    <select
+      value={order}
+      onChange={setOrder()}
+    >
+      {renderOrderOptions()}
+    </select>
+  </li>
+)
+
 const NavBar = (props) => {
   const { setTotal, total, maximum, minimum, generateNumbers, setOrder, order, saveNumbers } = props;
   return (
@@ -29,35 +60,10 @@ const NavBar = (props) => {
             {total === DEFAULT_STAT ? 'G' : 'Reg'}enerate
             </button>
         </li>
-        <li className="right">
-          <label>Order</label>
-          <select
-            value={order}
-            onChange={setOrder()}
-          >
-            {renderOrderOptions()}
-          </select>
-        </li>
-        <li className="right">
-          <label>Total:</label>
-          <input
-            value={total}
-            onChange={setTotal()}
-            type="number"
-            min="1"
-            max="10000"
-            maxLength="5"
-            onBlur={generateNumbers()}
-          />
-        </li>
-        <li className="right">
-          <label>Maximum:</label>
-          <label>{prepend0s(maximum)}</label>
-        </li>
-        <li className="right">
-          <label>Minimum:</label>
-          <label>{prepend0s(minimum)}</label>
-        </li>
+        {renderOrder(order, setOrder)}
+        {renderTotal(total, setTotal, generateNumbers)}
+        {renderStatistic('Maximum:', maximum)}
+        {renderStatistic('Minimum:', minimum)}
       </ul>
     </nav>
   )
