@@ -1,7 +1,6 @@
 # Random Phone Number Generator
 
 [![Build Status](https://travis-ci.org/Sekams/random_phone_number_generator.svg?branch=master)](https://travis-ci.org/Sekams/random_phone_number_generator)
-[![Coverage Status](https://coveralls.io/repos/github/Sekams/random_phone_number_generator/badge.svg?branch=master)](https://coveralls.io/github/Sekams/random_phone_number_generator?branch=master)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4185f3d81a24cde019c8/test_coverage)](https://codeclimate.com/github/Sekams/random_phone_number_generator/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4185f3d81a24cde019c8/maintainability)](https://codeclimate.com/github/Sekams/random_phone_number_generator/maintainability)
 
